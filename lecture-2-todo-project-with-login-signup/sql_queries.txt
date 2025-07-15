@@ -1,0 +1,17 @@
+use streamlitproject;
+
+show tables;
+
+create table mytodos(
+	todo_id int auto_increment unique,
+    todo_added varchar(255),
+    todo_title varchar(255),
+    todo_desc text
+);
+
+alter table mytodos add column todo_done boolean default false;
+
+insert into mytodos(todo_added, todo_title, todo_desc) values ();
+
+select * from mytodos where todo_added = "python";
+
